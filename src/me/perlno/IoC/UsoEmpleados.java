@@ -11,9 +11,11 @@ public class UsoEmpleados {
 		//Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
 		//System.out.println(Juan.getTareas());
 		//System.out.println(Juan.getInforme());
-		Empleados maria = contexto.getBean("miSecretarioEmpleado", Empleados.class);
+		SecretarioEmpleado maria = contexto.getBean("miSecretarioEmpleado", SecretarioEmpleado.class);
 		System.out.println(maria.getTareas());
 		System.out.println(maria.getInforme());
+		System.out.println(maria.getEmail());
+		System.out.println(maria.getNombreEmpresa());
 		contexto.close();
 		/*
 		Empleados empleado = new DirectorEmpleado();

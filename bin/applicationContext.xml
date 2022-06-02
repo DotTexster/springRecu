@@ -14,7 +14,11 @@
 </bean>
 
 <bean id="miSecretarioEmpleado" class="me.perlno.IoC.SecretarioEmpleado">
-<property name="informeNuevo" ref="miInforme"></property>
+
+	<property name="informeNuevo" ref="miInforme"></property>
+	<property name="email" value="le.texocotitla@gmail.com"></property>
+	<property name="nombreEmpresa" value="vulcanix"></property>
+	
 </bean>
 
 </beans>
