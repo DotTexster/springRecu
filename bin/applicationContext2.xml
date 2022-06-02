@@ -11,7 +11,7 @@
 
 <bean id="miInforme" class="me.perlno.IoC.informe"></bean>
 
-<bean id="miSecretarioEmpleado" class="me.perlno.IoC.SecretarioEmpleado">
+<bean id="miSecretarioEmpleado" class="me.perlno.IoC.SecretarioEmpleado" scope="prototype">
 
 	<property name="informeNuevo" ref="miInforme"></property>
 	
