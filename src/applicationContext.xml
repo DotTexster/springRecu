@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 <bean id="miInforme" class="me.perlno.IoC.informe"></bean>
-<bean id="miEmpleado" class="me.perlno.IoC.DirectorEmpleado">
+<bean id="miEmpleado" class="me.perlno.IoC.JefeEmpleado">
 <constructor-arg ref="miInforme"></constructor-arg>
 </bean>
 
