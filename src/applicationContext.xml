@@ -9,22 +9,6 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 
-<context:property-placeholder location="classpath:datosEmpresa.propiedades"/>
-
-<bean id="miInforme" class="me.perlno.IoC.informe"></bean>
-
-<bean id="miEmpleado" class="me.perlno.IoC.DirectorEmpleado">
-	<constructor-arg ref="miInforme"></constructor-arg>
-	<property name="email" value="${email}"></property>
-	<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
-</bean>
-
-<bean id="miSecretarioEmpleado" class="me.perlno.IoC.SecretarioEmpleado">
-
-	<property name="informeNuevo" ref="miInforme"></property>
-	<property name="email" value="le.texocotitla@gmail.com"></property>
-	<property name="nombreEmpresa" value="vulcanix"></property>
-	
-</bean>
+<context:component-scan base-package="me.perlnoi.pruebaAnnotations"></context:component-scan>
 
 </beans>
