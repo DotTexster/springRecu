@@ -10,6 +10,7 @@ public class UsoEmpleados {
 		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Empleados Juan = contexto.getBean("miEmpleado", Empleados.class);
 		System.out.println(Juan.getTareas());
+		System.out.println(Juan.getInforme());
 		contexto.close();
 		/*
 		Empleados empleado = new DirectorEmpleado();
