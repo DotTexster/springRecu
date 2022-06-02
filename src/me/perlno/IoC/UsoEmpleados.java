@@ -5,7 +5,7 @@ public class UsoEmpleados {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Empleados empleado = new JefeEmpleado();
+		Empleados empleado = new SecretarioEmpleado();
 		
 		
 		System.out.println(empleado.getTareas());
