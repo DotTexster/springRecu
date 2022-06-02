@@ -1,6 +1,7 @@
 package me.perlnoi.pruebaAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentado")
@@ -9,12 +10,6 @@ public class ComercialExperimentado implements Empleados {
 	public ComercialExperimentado() {
 		
 	}
-
-	@Autowired
-	public void setNuevoInforme(CreacionInformeFinanciero nuevoInforme) {
-		this.nuevoInforme = nuevoInforme;
-	}
-
 
 
 	@Override
@@ -31,6 +26,7 @@ public class ComercialExperimentado implements Empleados {
 	}
 	
 	@Autowired
+	@Qualifier("informeFinancieroTrim1")
 	private CreacionInformeFinanciero nuevoInforme;
 	
 	
