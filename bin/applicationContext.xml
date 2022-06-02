@@ -13,5 +13,8 @@
 <constructor-arg ref="miInforme"></constructor-arg>
 </bean>
 
+<bean id="miSecretarioEmpleado" class="me.perlno.IoC.SecretarioEmpleado">
+<property name="informeNuevo" ref="miInforme"></property>
+</bean>
 
 </beans>
